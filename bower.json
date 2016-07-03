@@ -1,0 +1,12 @@
+{
+  "name": "standard-app",
+  "authors": [
+    "AlexPlex <atellmer@gmail.com>"
+  ],
+  "description": "standard-app",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+  }
+}

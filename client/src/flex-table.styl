@@ -1,0 +1,83 @@
+@import 'nib'
+
+/*Delete before use: start*/
+global-reset()
+reset-html5()
+
+$border-color = #E0E0E0
+
+*
+	box-sizing border-box
+	&:after
+		box-sizing border-box
+	&:before
+		box-sizing border-box
+
+body
+	background-color #eee
+	font-family 'Roboto'
+	font-size 14px
+
+.container
+	width 100%
+	max-width 1200px
+	margin 40px auto
+	padding 0 15px
+/*Delete before use: end*/
+
+.flex-table
+	overflow-x auto
+	display flex
+	flex-flow column wrap
+	justify-content space-between
+	align-items stretch
+	background-color #fff
+	border-top 1px solid $border-color
+	border-left 1px solid $border-color
+	border-right 1px solid $border-color
+
+	&--full-border
+		.flex-table__cell
+			&:not(:last-child)
+				border-right 1px solid $border-color
+
+	&--align-middle
+		.flex-table__cell
+			align-items center
+
+	&--align-bottom
+		.flex-table__cell
+			align-items flex-end
+
+	&--align-center
+		.flex-table__cell
+			justify-content center
+
+	&__row
+		width 100%
+		box-sizing border-box
+		display flex 
+		flex-flow row nowrap
+		justify-content space-between
+		align-items stretch
+
+		&--header
+			font-weight 700
+			text-transform capitalize
+
+	&__cell
+		width 100%
+		min-width 5rem
+		padding 8px
+		border-bottom 1px solid $border-color
+		flex 1 100%
+		white-space normal
+		word-wrap break-word
+		word-break break-all
+		display flex 
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		box-sizing content-box
+		& > *
+			width 100%

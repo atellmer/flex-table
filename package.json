@@ -1,0 +1,20 @@
+{
+  "name": "standard-app",
+  "version": "0.0.1",
+  "description": "standard-app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&& gulp",
+    "build": "set NODE_ENV=production&& gulp"
+  },
+  "author": "AlexPlex",
+  "license": "ISC",
+  "devDependencies": {
+    "cli-color": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-rev-append": "^0.1.6",
+    "gulp-stylus": "^2.2.0",
+    "nib": "^1.1.0"
+  }
+}
